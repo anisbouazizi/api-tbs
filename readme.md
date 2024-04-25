@@ -21,6 +21,10 @@ Log into the PHP container
   docker exec -it www_docker_api_bts
 ```
 
+Inside the php container, run composer install 
+```bash
+ composer install
+```
 create the database :
 
 ```bash
@@ -34,7 +38,7 @@ automatically generate data :
 php bin/console doctrine:fixtures:load
 ```
 
-create the testdatabase :
+create the test database :
 
 ```bash
 php bin/console --env=test doctrine:database:create
